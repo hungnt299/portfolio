@@ -13,16 +13,18 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Your Name - Front End Engineer',
+      title: "Hung Ngo - Software Engineer",
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Front End Engineer building accessible, pixel-perfect digital experiences for the web.' },
-        { name: 'theme-color', content: '#0f172a' }
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content:
+            "Front End Engineer building accessible, pixel-perfect digital experiences for the web.",
+        },
+        { name: "theme-color", content: "#0f172a" },
       ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-      ]
-    }
-  }
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
 });
