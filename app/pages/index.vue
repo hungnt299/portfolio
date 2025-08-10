@@ -13,21 +13,21 @@ const sections = [
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/yourusername",
+    url: "https://github.com/hungnt299",
     icon: `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
     </svg>`,
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://linkedin.com/in/hungnt299",
     icon: `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.047-1.852-3.047-1.853 0-2.136 1.445-2.136 2.939v5.677H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
     </svg>`,
   },
   {
     name: "Facebook",
-    url: "https://facebook.com/yourusername",
+    url: "https://www.facebook.com/hungnt299",
     icon: `<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
     </svg>`,
@@ -36,45 +36,134 @@ const socialLinks = [
 
 const experiences = [
   {
-    period: "2023 - Present",
-    title: "Senior Front-End Engineer",
-    company: "Your Company",
-    companyUrl: "https://yourcompany.com",
+    period: "March 2024 - Aug 2025",
+    title: "Lead Engineer",
+    company: "Dayone Software Technology Ltd",
+    companyUrl: "#",
     description:
-      "Leading frontend development initiatives, mentoring junior developers, and implementing best practices for accessibility and performance.",
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+      "Frontend team management with full-stack collaboration, DevOps deployment support, code review, and technical ideation",
+    technologies: [
+      "Vue.js",
+      "Nuxt.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Docker",
+      "AWS",
+      "Cloudflare",
+    ],
   },
   {
-    period: "2021 - 2023",
-    title: "Front-End Developer",
-    company: "Previous Company",
-    companyUrl: "https://previouscompany.com",
+    period: "March 2021 - March 2024",
+    title: "BOD | Full Stack Engineer",
+    company: "QASOFT Solution",
+    companyUrl: "#",
     description:
-      "Developed responsive web applications and collaborated with design teams to create seamless user experiences.",
-    technologies: ["Vue.js", "JavaScript", "CSS3", "HTML5"],
+      "Technical leadership and end-to-end project management: from client consultation, requirement analysis, solution design to full-stack implementation and development team coordination",
+    technologies: [
+      "Vue.js",
+      "Nuxt.js",
+      "Laravel",
+      "Node.js",
+      "NestJS",
+      "MySQL",
+      "MSSQL",
+    ],
+  },
+  {
+    period: "June 2023 - Dec 2023",
+    title: "Frontend Developer",
+    company: "NEC Vietnam Co Ltd",
+    companyUrl: "#",
+    description:
+      "Developed responsive web interfaces, implemented API integrations, and optimized user experience design",
+    technologies: ["React.js", "Vue.js", "NestJS", "Ant Design", "KonvaJS"],
+  },
+  {
+    period: "Dec 2021 - June 2022",
+    title: "Frontend Developer",
+    company: "Pax Creation Co Ltd",
+    companyUrl: "#",
+    description:
+      "Developed responsive web interfaces, implemented API integrations, and optimized user experience design",
+    technologies: [
+      "Vue.js",
+      "Nuxt.js",
+      "NestJS",
+      "HTML",
+      "CSS",
+      "Vuetify",
+      "Google Analytics",
+    ],
   },
 ];
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Multi-Platform Gaming Web Application (Frontend)",
     description:
-      "A full-stack e-commerce solution built with modern web technologies, featuring responsive design and secure payment processing.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    url: "https://github.com/yourusername/ecommerce",
+      "Multi-platform gaming web application targeting European markets with casino games, sports betting, and social gaming features. Built with Vue.js 3/Nuxt.js 3 supporting multiple domains and brands through unified architecture.",
+    technologies: [
+      "Vue.js",
+      "Nuxt.js",
+      "Laravel",
+      "TypeScript",
+      "Tailwind CSS",
+      "Strapi CMS",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Cloudflare",
+      "Google Analytics",
+      "New Relic",
+      "Pusher",
+      "Twilio",
+      "i18n",
+    ],
+    url: "#",
   },
   {
-    title: "Task Management App",
+    title: "Misa (FULL-STACK)",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    technologies: ["Vue.js", "Firebase", "Vuex", "Tailwind CSS"],
-    url: "https://github.com/yourusername/taskapp",
+      "A comprehensive enterprise system for managing accounting, human resources, and business operations. The system includes multiple functional modules such as enterprise management covering accounting, HR, orders, and asset management, debt tracking, inventory, tools, reporting, and integration with tax systems. Features a real-time dashboard to track work progress and order status across departments.",
+    technologies: [
+      "Vue.js",
+      "Nuxt.js",
+      "Laravel",
+      "Node.js",
+      "NestJS",
+      "MySQL",
+      "MSSQL",
+    ],
+    url: "#",
+  },
+  {
+    title: "Motion Care - AI Health Monitoring System",
+    description:
+      "An AI-based health monitoring system where users record posture videos guided by the app. Frontend captures body key points (joints, limbs) and draws visual markers (dots/lines) over the body. Coordinates are sent to the backend for analysis of health conditions and improvement suggestions. Used in physiotherapy, posture correction, and preventive care.",
+    technologies: ["React.js", "Vue.js", "NestJS", "Ant Design", "KonvaJS"],
+    url: "#",
+  },
+  {
+    title: "Shiftgate - Luxury Car Marketplace",
+    description:
+      "Luxury imported car marketplace platform connecting buyers and sellers in Japan. Frontend provides advanced search filters by brand, price, year, and mileage with responsive design. Vehicle data and user interactions are processed through secure APIs for inventory management.",
+    technologies: [
+      "Vue.js",
+      "Nuxt.js",
+      "NestJS",
+      "HTML",
+      "CSS",
+      "Vuetify",
+      "Google Analytics",
+    ],
+    url: "#",
   },
 ];
 
 const contactInfo = {
-  email: "hello@yourname.com",
-  location: "San Francisco, CA",
+  email: "hungnt299@gmail.com",
+  phone: "0377072672",
+  location: "District 12, HCMC",
   available: "Available for new opportunities",
 };
 
@@ -148,18 +237,26 @@ onUnmounted(() => {
 <template>
   <div class="min-h-screen bg-slate-900 text-slate-400 font-inter">
     <div class="max-w-7xl mx-auto px-8 lg:px-12 pt-24 pb-12">
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-20">
+      <div class="flex gap-16 lg:gap-20">
         <!-- Left Column - Navigation -->
-        <div class="lg:col-span-1">
+        <div class="w-[48%]">
           <div class="sticky top-24">
             <!-- Bio -->
             <div class="mb-16">
-              <h2 class="text-4xl font-bold text-white mb-4">Your Name</h2>
+              <h2 class="text-4xl font-bold text-white mb-4">Ngo Thanh Hung</h2>
               <p class="text-xl mb-6">Software Engineer</p>
-              <p class="text-md leading-relaxed">
-                I build accessible, pixel-perfect digital experiences for the
-                web.
+              <p class="text-md leading-relaxed max-w-xs mb-6">
+                Experienced Full-Stack Software Engineer with 5 years of
+                hands-on experience in designing, developing, and deploying
+                scalable web applications and enterprise systems.
               </p>
+              <a
+                href="/Ngo-Thanh-Hung-CV.pdf"
+                target="_blank"
+                class="text-cyan-300 hover:text-cyan-500 transition-colors duration-200 font-medium"
+              >
+                View resume
+              </a>
             </div>
 
             <!-- Navigation -->
@@ -169,7 +266,7 @@ onUnmounted(() => {
                   <button
                     @click="scrollToSection(section.id)"
                     :class="[
-                      'text-left w-full text-xs font-bold py-3 px-0 transition-all duration-200 hover:text-white relative group',
+                      'text-left w-full hover:cursor-pointer text-xs font-bold py-3 px-0 transition-all duration-200 hover:text-white relative group',
                       currentSection === section.id
                         ? 'text-white pl-12'
                         : 'text-slate-400 pl-8 hover:pl-8',
@@ -209,38 +306,44 @@ onUnmounted(() => {
         </div>
 
         <!-- Right Column - Content -->
-        <div class="lg:col-span-3">
+        <div class="w-[52%]">
           <!-- About Section -->
           <section id="about" class="space-y-8 mb-24">
             <h2 class="text-3xl font-bold text-white mb-8">About</h2>
             <p class="text-lg leading-relaxed">
-              I'm a developer passionate about crafting accessible,
-              pixel-perfect user interfaces that blend thoughtful design with
-              robust engineering. My favorite work lies at the intersection of
-              design and development, creating experiences that not only look
-              great but are meticulously built for performance and usability.
+              I'm an experienced Full-Stack Software Engineer with 5 years of
+              hands-on experience in designing, developing, and deploying
+              scalable web applications and enterprise systems. I have strong
+              expertise in both frontend and backend development using modern
+              JavaScript frameworks (Vue.js, Nuxt.js, React.js, Next.js) and
+              robust backend stacks (Laravel, Node.js, NestJS).
             </p>
             <p class="text-lg leading-relaxed">
               Currently, I'm a
-              <strong class="text-white">Senior Front-End Engineer</strong> at
-              <strong class="text-white">Your Company</strong>, specializing in
-              modern web technologies and accessibility. I contribute to the
-              creation and maintenance of UI components that power our frontend,
-              ensuring our platform meets web accessibility standards and best
-              practices to deliver an inclusive user experience.
+              <strong class="text-white">Lead Engineer</strong> at
+              <strong class="text-white">Dayone Software Technology Ltd</strong
+              >, where I lead frontend team management with full-stack
+              collaboration, DevOps deployment support, code review, and
+              technical ideation. I specialize in modern web technologies and
+              have proven ability to lead cross-functional teams, architect
+              efficient solutions, and deliver high-quality software in
+              fast-paced, agile environments.
             </p>
             <p class="text-lg leading-relaxed">
-              In the past, I've had the opportunity to develop software across a
-              variety of settings — from advertising agencies and large
-              corporations to start-ups and small digital product studios. I'm
-              always eager to learn new technologies and contribute to
-              meaningful projects.
+              Previously, I served as
+              <strong class="text-white">BOD | Full Stack Engineer</strong> at
+              <strong class="text-white">QASOFT Solution</strong>, where I
+              provided technical leadership and end-to-end project management:
+              from client consultation, requirement analysis, solution design to
+              full-stack implementation and development team coordination.
             </p>
             <p class="text-lg leading-relaxed">
-              In my spare time, I'm usually coding, reading tech blogs,
-              exploring new frameworks, or contributing to open-source projects.
-              I believe in continuous learning and sharing knowledge with the
-              developer community.
+              I'm adept at leveraging DevOps tools and cloud infrastructure to
+              optimize application performance and deployment. My experience
+              spans across various industries including gaming, enterprise
+              systems, healthcare, and e-commerce platforms. I'm always eager to
+              learn new technologies and contribute to meaningful projects that
+              make a real impact.
             </p>
           </section>
 
@@ -274,7 +377,7 @@ onUnmounted(() => {
                   <span
                     v-for="tech in exp.technologies"
                     :key="tech"
-                    class="px-4 py-2 bg-slate-800 text-slate-300 text-sm rounded-md border border-slate-700"
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
                   >
                     {{ tech }}
                   </span>
@@ -301,7 +404,7 @@ onUnmounted(() => {
                 <span
                   v-for="tech in project.technologies"
                   :key="tech"
-                  class="px-4 py-2 bg-slate-800 text-slate-300 text-sm rounded-md border border-slate-700"
+                  class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
                 >
                   {{ tech }}
                 </span>
@@ -327,6 +430,10 @@ onUnmounted(() => {
                 >
                   {{ contactInfo.email }}
                 </a>
+              </div>
+              <div class="flex items-center space-x-4">
+                <span class="text-xl">📱</span>
+                <span class="text-lg">{{ contactInfo.phone }}</span>
               </div>
               <div class="flex items-center space-x-4">
                 <span class="text-xl">📍</span>
