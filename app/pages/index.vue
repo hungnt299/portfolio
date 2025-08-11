@@ -84,6 +84,7 @@ const experiences = [
 const projects = [
   {
     title: "Multi-Platform Gaming Web Application (Frontend)",
+    period: "March 2024 - Aug 2025",
     description:
       "Multi-platform gaming web application targeting European markets with casino games, sports betting, and social gaming features. Built with Vue.js 3/Nuxt.js 3 supporting multiple domains and brands through unified architecture.",
     technologies: [
@@ -114,6 +115,7 @@ const projects = [
   },
   {
     title: "Misa (Full-Stack)",
+    period: "Jun 2023 - Jan 2024",
     description:
       "A comprehensive enterprise system for managing accounting, human resources, and business operations. The system includes multiple functional modules such as enterprise management covering accounting, HR, orders, and asset management, debt tracking, inventory, tools, reporting, and integration with tax systems. Features a real-time dashboard to track work progress and order status across departments.",
     technologies: [
@@ -135,9 +137,10 @@ const projects = [
   },
   {
     title: "Motion Care - AI Health Monitoring System (Frontend)",
+    period: "Jun 2023 - Aug 2023",
     description:
       "An AI-based health monitoring system where users record posture videos guided by the app. Frontend captures body key points (joints, limbs) and draws visual markers (dots/lines) over the body. Coordinates are sent to the backend for analysis of health conditions and improvement suggestions. Used in physiotherapy, posture correction, and preventive care.",
-    technologies: ["React.js", "Vue.js", "NestJS", "Ant Design", "KonvaJS"],
+    technologies: ["React.js", "Vue.js", "Nest.js", "Ant Design", "KonvaJS"],
     responsibilities: [
       "Built UI flow to guide users through motion recording sessions",
       "Implemented canvas drawing (KonvaJS) for real-time posture tracking",
@@ -148,6 +151,7 @@ const projects = [
   },
   {
     title: "Shiftgate - Luxury Car Marketplace (Frontend)",
+    period: "Dec 2021 - Mar 2022",
     description:
       "Luxury imported car marketplace platform connecting buyers and sellers in Japan. Frontend provides advanced search filters by brand, price, year, and mileage with responsive design. Vehicle data and user interactions are processed through secure APIs for inventory management.",
     technologies: [
@@ -449,6 +453,9 @@ onUnmounted(() => {
               <h3 class="text-xl font-semibold text-white mb-4">
                 {{ project.title }}
               </h3>
+              <p class="text-sm text-slate-400 mb-4">
+                {{ project.period }}
+              </p>
               <p class="leading-relaxed mb-6">
                 {{ project.description }}
               </p>
