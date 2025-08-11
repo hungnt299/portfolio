@@ -42,15 +42,9 @@ const experiences = [
     companyUrl: "#",
     description:
       "Frontend team management with full-stack collaboration, DevOps deployment support, code review, and technical ideation",
-    technologies: [
-      "Vue.js",
-      "Nuxt.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Docker",
-      "AWS",
-      "Cloudflare",
-    ],
+    technologies: [],
+    employmentType: "Full-time",
+    workMode: "Official",
   },
   {
     period: "March 2021 - March 2024",
@@ -59,15 +53,9 @@ const experiences = [
     companyUrl: "#",
     description:
       "Technical leadership and end-to-end project management: from client consultation, requirement analysis, solution design to full-stack implementation and development team coordination",
-    technologies: [
-      "Vue.js",
-      "Nuxt.js",
-      "Laravel",
-      "Node.js",
-      "NestJS",
-      "MySQL",
-      "MSSQL",
-    ],
+    technologies: [],
+    employmentType: "Full-time",
+    workMode: "Official",
   },
   {
     period: "June 2023 - Dec 2023",
@@ -76,7 +64,9 @@ const experiences = [
     companyUrl: "#",
     description:
       "Developed responsive web interfaces, implemented API integrations, and optimized user experience design",
-    technologies: ["React.js", "Vue.js", "NestJS", "Ant Design", "KonvaJS"],
+    technologies: [],
+    employmentType: "Full-time",
+    workMode: "Onsite",
   },
   {
     period: "Dec 2021 - June 2022",
@@ -85,15 +75,9 @@ const experiences = [
     companyUrl: "#",
     description:
       "Developed responsive web interfaces, implemented API integrations, and optimized user experience design",
-    technologies: [
-      "Vue.js",
-      "Nuxt.js",
-      "NestJS",
-      "HTML",
-      "CSS",
-      "Vuetify",
-      "Google Analytics",
-    ],
+    technologies: [],
+    employmentType: "Full-time",
+    workMode: "Onsite",
   },
 ];
 
@@ -119,10 +103,17 @@ const projects = [
       "Twilio",
       "i18n",
     ],
+    responsibilities: [
+      "Designed scalable component-based architecture for multiple gaming domains",
+      "Developed features for gaming management, sports betting, and social interactions",
+      "Implemented multi-language support (13+ languages) and domain-specific configurations",
+      "Optimized performance through lazy loading, code splitting, and caching strategies",
+      "Integrated real-time features (live chat, notifications) and analytics systems",
+    ],
     url: "#",
   },
   {
-    title: "Misa (FULL-STACK)",
+    title: "Misa (Full-Stack)",
     description:
       "A comprehensive enterprise system for managing accounting, human resources, and business operations. The system includes multiple functional modules such as enterprise management covering accounting, HR, orders, and asset management, debt tracking, inventory, tools, reporting, and integration with tax systems. Features a real-time dashboard to track work progress and order status across departments.",
     technologies: [
@@ -134,17 +125,29 @@ const projects = [
       "MySQL",
       "MSSQL",
     ],
+    responsibilities: [
+      "Developed features for both frontend and backend across various business modules",
+      "Built analytics dashboards for real-time task and order tracking",
+      "Implemented responsive UI and synchronized backend API data flow",
+      "Collaborated with QA and BA teams for testing, feedback, and final delivery",
+    ],
     url: "#",
   },
   {
-    title: "Motion Care - AI Health Monitoring System",
+    title: "Motion Care - AI Health Monitoring System (Frontend)",
     description:
       "An AI-based health monitoring system where users record posture videos guided by the app. Frontend captures body key points (joints, limbs) and draws visual markers (dots/lines) over the body. Coordinates are sent to the backend for analysis of health conditions and improvement suggestions. Used in physiotherapy, posture correction, and preventive care.",
     technologies: ["React.js", "Vue.js", "NestJS", "Ant Design", "KonvaJS"],
+    responsibilities: [
+      "Built UI flow to guide users through motion recording sessions",
+      "Implemented canvas drawing (KonvaJS) for real-time posture tracking",
+      "Extracted and normalized coordinate data for backend consumption",
+      "Worked closely with AI/backend teams to visualize results and feedback",
+    ],
     url: "#",
   },
   {
-    title: "Shiftgate - Luxury Car Marketplace",
+    title: "Shiftgate - Luxury Car Marketplace (Frontend)",
     description:
       "Luxury imported car marketplace platform connecting buyers and sellers in Japan. Frontend provides advanced search filters by brand, price, year, and mileage with responsive design. Vehicle data and user interactions are processed through secure APIs for inventory management.",
     technologies: [
@@ -156,14 +159,19 @@ const projects = [
       "Vuetify",
       "Google Analytics",
     ],
+    responsibilities: [
+      "Built comprehensive UI/UX for vehicle browsing and detailed product pages",
+      "Implemented advanced filtering system and search functionality using Vue.js/Nuxt.js",
+      "Developed user authentication, registration flows, and member dashboard features",
+    ],
     url: "#",
   },
 ];
 
 const contactInfo = {
   email: "hungnt299@gmail.com",
-  phone: "0377072672",
-  location: "District 12, HCMC",
+  phone: "+84 377072672",
+  location: "Vuon Lai Street, District 12, HCMC",
   available: "Available for new opportunities",
 };
 
@@ -173,6 +181,22 @@ const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
   if (element) {
     element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+// Function to copy text to clipboard
+const copyToClipboard = async (text) => {
+  try {
+    await navigator.clipboard.writeText(text);
+    // You could add a toast notification here if desired
+  } catch {
+    // Fallback for older browsers
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
   }
 };
 
@@ -246,17 +270,26 @@ onUnmounted(() => {
               <h2 class="text-4xl font-bold text-white mb-4">Ngo Thanh Hung</h2>
               <p class="text-xl mb-6">Software Engineer</p>
               <p class="text-md leading-relaxed max-w-xs mb-6">
-                Experienced Full-Stack Software Engineer with 5 years of
-                hands-on experience in designing, developing, and deploying
-                scalable web applications and enterprise systems.
+                Code. Lead. Deliver.
               </p>
-              <a
-                href="/Ngo-Thanh-Hung-CV.pdf"
-                target="_blank"
-                class="text-cyan-300 hover:text-cyan-500 transition-colors duration-200 font-medium"
-              >
-                View resume
-              </a>
+              <div class="mb-2">
+                <a
+                  href="/Ngo-Thanh-Hung-CV.pdf"
+                  target="_blank"
+                  class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
+                >
+                  View resume →
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/Ngo-Thanh-Hung-Recommendation-Letter.pdf"
+                  target="_blank"
+                  class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
+                >
+                  View Recommendation Letter →
+                </a>
+              </div>
             </div>
 
             <!-- Navigation -->
@@ -264,13 +297,13 @@ onUnmounted(() => {
               <ul class="space-y-3">
                 <li v-for="section in sections" :key="section.id">
                   <button
-                    @click="scrollToSection(section.id)"
                     :class="[
                       'text-left w-full hover:cursor-pointer text-xs font-bold py-3 px-0 transition-all duration-200 hover:text-white relative group',
                       currentSection === section.id
                         ? 'text-white pl-12'
                         : 'text-slate-400 pl-8 hover:pl-8',
                     ]"
+                    @click="scrollToSection(section.id)"
                   >
                     <!-- Horizontal line for active/hover state -->
                     <div
@@ -358,7 +391,7 @@ onUnmounted(() => {
               <div class="mb-6">
                 <div class="text-sm text-slate-400 mb-3">{{ exp.period }}</div>
                 <h3 class="text-xl font-semibold text-white mb-2">
-                  {{ exp.title }}
+                  {{ exp.company }}
                 </h3>
                 <div class="text-slate-400 mb-4">
                   <a
@@ -367,13 +400,30 @@ onUnmounted(() => {
                     rel="noopener noreferrer"
                     class="hover:text-white transition-colors duration-200"
                   >
-                    {{ exp.company }}
+                    {{ exp.title }}
                   </a>
+                </div>
+                <div
+                  v-if="exp.employmentType || exp.workMode"
+                  class="flex flex-wrap items-center gap-2 mb-4"
+                >
+                  <span
+                    v-if="exp.employmentType"
+                    class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-semibold border border-emerald-700/60 bg-emerald-900/30 text-emerald-300 tracking-wide"
+                  >
+                    {{ exp.employmentType }}
+                  </span>
+                  <span
+                    v-if="exp.workMode"
+                    class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-semibold border border-cyan-700/60 bg-cyan-900/30 text-cyan-300 tracking-wide"
+                  >
+                    {{ exp.workMode }}
+                  </span>
                 </div>
                 <p class="leading-relaxed mb-6">
                   {{ exp.description }}
                 </p>
-                <div class="flex flex-wrap gap-3">
+                <!-- <div class="flex flex-wrap gap-3">
                   <span
                     v-for="tech in exp.technologies"
                     :key="tech"
@@ -381,7 +431,7 @@ onUnmounted(() => {
                   >
                     {{ tech }}
                   </span>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
@@ -400,21 +450,38 @@ onUnmounted(() => {
               <p class="leading-relaxed mb-6">
                 {{ project.description }}
               </p>
-              <div class="flex flex-wrap gap-3 mb-6">
+              <div
+                v-if="
+                  project.responsibilities && project.responsibilities.length
+                "
+                class="mb-6"
+              >
+                <h4 class="text-lg font-semibold text-white mb-3">
+                  Responsibilities
+                </h4>
+                <ul
+                  class="list-disc list-inside space-y-2 text-slate-300 text-sm"
+                >
+                  <li v-for="item in project.responsibilities" :key="item">
+                    {{ item }}
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-wrap gap-3">
                 <span
                   v-for="tech in project.technologies"
                   :key="tech"
-                  class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  class="px-4 py-2 bg-slate-800 text-cyan-300 text-xs rounded-lg border border-slate-700 font-medium"
                 >
                   {{ tech }}
                 </span>
               </div>
-              <a
+              <!-- <a
                 :href="project.url"
-                class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                class="inline-flex text-sm items-center text-blue-400 hover:text-blue-300 transition-colors duration-200"
               >
                 View Project →
-              </a>
+              </a> -->
             </div>
           </section>
 
@@ -433,7 +500,13 @@ onUnmounted(() => {
               </div>
               <div class="flex items-center space-x-4">
                 <span class="text-xl">📱</span>
-                <span class="text-lg">{{ contactInfo.phone }}</span>
+                <button
+                  @click="copyToClipboard(contactInfo.phone)"
+                  class="text-lg text-slate-400 hover:text-cyan-300 transition-colors duration-200 cursor-pointer"
+                  title="Click to copy phone number"
+                >
+                  {{ contactInfo.phone }}
+                </button>
               </div>
               <div class="flex items-center space-x-4">
                 <span class="text-xl">📍</span>
