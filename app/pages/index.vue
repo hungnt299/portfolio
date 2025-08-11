@@ -120,10 +120,10 @@ const projects = [
       "Vue.js",
       "Nuxt.js",
       "Laravel",
-      "Node.js",
-      "NestJS",
-      "MySQL",
-      "MSSQL",
+      "Vuetify",
+      "Tailwind CSS",
+      "CSS",
+      "Pusher",
     ],
     responsibilities: [
       "Developed features for both frontend and backend across various business modules",
@@ -153,7 +153,7 @@ const projects = [
     technologies: [
       "Vue.js",
       "Nuxt.js",
-      "NestJS",
+      "Nest.js",
       "HTML",
       "CSS",
       "Vuetify",
@@ -268,27 +268,29 @@ onUnmounted(() => {
             <!-- Bio -->
             <div class="mb-16">
               <h2 class="text-4xl font-bold text-white mb-4">Ngo Thanh Hung</h2>
-              <p class="text-xl mb-6">Software Engineer</p>
-              <p class="text-md leading-relaxed max-w-xs mb-6">
+              <p class="text-xl">Software Engineer</p>
+              <p class="text-md leading-relaxed max-w-xs">
                 Code. Lead. Deliver.
               </p>
-              <div class="mb-2">
-                <a
-                  href="/Ngo-Thanh-Hung-CV.pdf"
-                  target="_blank"
-                  class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
-                >
-                  View resume →
-                </a>
-              </div>
-              <div>
-                <a
-                  href="/Ngo-Thanh-Hung-Recommendation-Letter.pdf"
-                  target="_blank"
-                  class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
-                >
-                  View Recommendation Letter →
-                </a>
+              <div class="flex flex-col gap-2 mt-16">
+                <div>
+                  <a
+                    href="/Ngo-Thanh-Hung-CV.pdf"
+                    target="_blank"
+                    class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
+                  >
+                    View resume →
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="/Ngo-Thanh-Hung-Recommendation-Letter.pdf"
+                    target="_blank"
+                    class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
+                  >
+                    View Recommendation Letter →
+                  </a>
+                </div>
               </div>
             </div>
 
