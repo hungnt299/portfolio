@@ -237,9 +237,9 @@ onUnmounted(() => {
 <template>
   <div class="min-h-screen bg-slate-900 text-slate-400 font-inter">
     <div class="max-w-7xl mx-auto px-8 lg:px-12 pt-24 pb-12">
-      <div class="flex gap-16 lg:gap-20">
+      <div class="flex flex-col md:flex-row gap-16 lg:gap-20">
         <!-- Left Column - Navigation -->
-        <div class="w-[48%]">
+        <div class="w-full md:w-[48%]">
           <div class="sticky top-24">
             <!-- Bio -->
             <div class="mb-16">
@@ -306,7 +306,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Right Column - Content -->
-        <div class="w-[52%]">
+        <div class="w-full md:w-[52%]">
           <!-- About Section -->
           <section id="about" class="space-y-8 mb-24">
             <h2 class="text-3xl font-bold text-white mb-8">About</h2>
