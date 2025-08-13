@@ -263,7 +263,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-slate-900 text-slate-400 font-inter">
+  <div class="min-h-screen bg-[#11141c] text-slate-300">
     <div class="max-w-7xl mx-auto px-8 lg:px-12 pt-24 pb-12">
       <div class="flex flex-col md:flex-row gap-16 lg:gap-20">
         <!-- Left Column - Navigation -->
@@ -271,29 +271,29 @@ onUnmounted(() => {
           <div class="sticky top-24">
             <!-- Bio -->
             <div class="mb-16">
-              <h2 class="text-4xl font-bold text-white mb-4">Ngo Thanh Hung</h2>
+              <h2 class="text-4xl font-bold mb-4 text-white">Ngo Thanh Hung</h2>
               <p class="text-xl">Software Engineer</p>
               <p class="text-md leading-relaxed max-w-xs">
                 Code. Lead. Deliver.
               </p>
               <div class="flex flex-col gap-2 mt-16">
                 <div>
-                  <a
-                    href="/Ngo-Thanh-Hung-CV.pdf"
+                  <NuxtLink
+                    to="/cv"
                     target="_blank"
-                    class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
+                    class="text-cyan-300 text-base hover:text-cyan-500 transition-colors duration-200 font-medium"
                   >
                     View resume →
-                  </a>
+                  </NuxtLink>
                 </div>
                 <div>
-                  <a
-                    href="/Ngo-Thanh-Hung-Recommendation-Letter.pdf"
+                  <NuxtLink
+                    to="/recommendation-letter"
                     target="_blank"
-                    class="text-cyan-300 text-sm hover:text-cyan-500 transition-colors duration-200 font-medium"
+                    class="text-cyan-300 text-base hover:text-cyan-500 transition-colors duration-200 font-medium"
                   >
                     View Recommendation Letter →
-                  </a>
+                  </NuxtLink>
                 </div>
               </div>
             </div>
@@ -304,10 +304,10 @@ onUnmounted(() => {
                 <li v-for="section in sections" :key="section.id">
                   <button
                     :class="[
-                      'text-left w-full hover:cursor-pointer text-xs font-bold py-3 px-0 transition-all duration-200 hover:text-white relative group',
+                      'text-left pr-20 hover:cursor-pointer text-sm font-bold py-3 transition-all duration-200 hover:text-white relative group',
                       currentSection === section.id
                         ? 'text-white pl-12'
-                        : 'text-slate-400 pl-8 hover:pl-8',
+                        : 'text-slate-300 pl-8 hover:pl-8',
                     ]"
                     @click="scrollToSection(section.id)"
                   >
@@ -350,12 +350,13 @@ onUnmounted(() => {
           <section id="about" class="space-y-8 mb-24">
             <h2 class="text-3xl font-bold text-white mb-8">About</h2>
             <p class="text-lg leading-relaxed">
-              I'm an experienced Full-Stack Software Engineer with 5 years of
-              hands-on experience in designing, developing, and deploying
-              scalable web applications and enterprise systems. I have strong
-              expertise in both frontend and backend development using modern
-              JavaScript frameworks (Vue.js, Nuxt.js, React.js, Next.js) and
-              robust backend stacks (Laravel, Node.js, NestJS).
+              I'm an experienced Full-Stack Software Engineer with
+              <strong class="text-white">5 years</strong> of hands-on experience
+              in designing, developing, and deploying scalable web applications
+              and enterprise systems. I have strong expertise in both frontend
+              and backend development using modern JavaScript frameworks
+              (Vue.js, Nuxt.js, React.js, Next.js) and robust backend stacks
+              (Laravel, Node.js, NestJS).
             </p>
             <p class="text-lg leading-relaxed">
               Currently, I'm a
@@ -395,11 +396,11 @@ onUnmounted(() => {
               class="border-l-2 border-slate-700 pl-8"
             >
               <div class="mb-6">
-                <div class="text-sm text-slate-400 mb-3">{{ exp.period }}</div>
+                <div class="text-sm text-slate-300 mb-3">{{ exp.period }}</div>
                 <h3 class="text-xl font-semibold text-white mb-2">
                   {{ exp.company }}
                 </h3>
-                <div class="text-slate-400 mb-4">
+                <div class="text-slate-300 mb-4">
                   <a
                     :href="exp.companyUrl"
                     target="_blank"
@@ -415,13 +416,13 @@ onUnmounted(() => {
                 >
                   <span
                     v-if="exp.employmentType"
-                    class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-semibold border border-emerald-700/60 bg-emerald-900/30 text-emerald-300 tracking-wide"
+                    class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border border-emerald-700/60 bg-emerald-900/30 text-emerald-300 tracking-wide"
                   >
                     {{ exp.employmentType }}
                   </span>
                   <span
                     v-if="exp.workMode"
-                    class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-semibold border border-cyan-700/60 bg-cyan-900/30 text-cyan-300 tracking-wide"
+                    class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border border-cyan-700/60 bg-cyan-900/30 text-cyan-300 tracking-wide"
                   >
                     {{ exp.workMode }}
                   </span>
@@ -453,7 +454,7 @@ onUnmounted(() => {
               <h3 class="text-xl font-semibold text-white mb-4">
                 {{ project.title }}
               </h3>
-              <p class="text-sm text-slate-400 mb-4">
+              <p class="text-sm text-slate-300 mb-4">
                 {{ project.period }}
               </p>
               <p class="leading-relaxed mb-6">
@@ -469,7 +470,7 @@ onUnmounted(() => {
                   Responsibilities
                 </h4>
                 <ul
-                  class="list-disc list-inside space-y-2 text-slate-300 text-sm"
+                  class="list-disc list-inside space-y-2 text-slate-300 text-base"
                 >
                   <li v-for="item in project.responsibilities" :key="item">
                     {{ item }}
@@ -480,7 +481,7 @@ onUnmounted(() => {
                 <span
                   v-for="tech in project.technologies"
                   :key="tech"
-                  class="px-4 py-2 bg-slate-800 text-cyan-300 text-xs rounded-lg border border-slate-700 font-medium"
+                  class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
                 >
                   {{ tech }}
                 </span>
@@ -499,10 +500,10 @@ onUnmounted(() => {
             <h2 class="text-3xl font-bold text-white mb-8">Contact</h2>
             <div class="space-y-6">
               <div class="flex items-center space-x-4">
-                <span class="text-slate-400 text-xl">📧</span>
+                <span class="text-slate-300 text-xl">📧</span>
                 <a
                   :href="`mailto:${contactInfo.email}`"
-                  class="text-lg text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                  class="text-lg text-cyan-300 hover:text-cyan-500 transition-colors duration-200"
                 >
                   {{ contactInfo.email }}
                 </a>
@@ -511,7 +512,7 @@ onUnmounted(() => {
                 <span class="text-xl">📱</span>
                 <button
                   @click="copyToClipboard(contactInfo.phone)"
-                  class="text-lg text-slate-400 hover:text-cyan-300 transition-colors duration-200 cursor-pointer"
+                  class="text-lg text-slate-300 hover:text-cyan-300 transition-colors duration-200 cursor-pointer"
                   title="Click to copy phone number"
                 >
                   {{ contactInfo.phone }}
@@ -523,7 +524,7 @@ onUnmounted(() => {
               </div>
               <div class="flex items-center space-x-4">
                 <span class="text-xl">💼</span>
-                <span class="text-lg text-green-400">{{
+                <span class="text-lg text-green-500">{{
                   contactInfo.available
                 }}</span>
               </div>
