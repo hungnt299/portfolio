@@ -11,7 +11,7 @@
 <script setup>
 // Set page title and meta
 useHead({
-  title: "Ngo Thanh Hung - Recommendation Letter",
+  title: "Hung Ngo - Recommendation Letter",
   meta: [
     {
       name: "description",

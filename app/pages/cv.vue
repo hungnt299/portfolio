@@ -11,7 +11,7 @@
 <script setup>
 // Set page title and meta
 useHead({
-  title: "Ngo Thanh Hung - CV",
+  title: "Hung Ngo - CV",
   meta: [
     {
       name: "description",
