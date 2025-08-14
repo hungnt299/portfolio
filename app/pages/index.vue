@@ -5,6 +5,7 @@ const currentSection = ref("about");
 
 const sections = [
   { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
@@ -385,6 +386,191 @@ onUnmounted(() => {
               learn new technologies and contribute to meaningful projects that
               make a real impact.
             </p>
+          </section>
+
+          <!-- Technical Skills Section -->
+          <section id="skills" class="space-y-8 mb-24">
+            <h2 class="text-3xl font-bold text-white mb-8">Technical Skills</h2>
+            <div class="flex flex-col gap-8">
+              <!-- Languages -->
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Languages</h3>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    PHP
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    JavaScript
+                  </span>
+                </div>
+              </div>
+
+              <!-- Frontend -->
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Frontend</h3>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    VueJS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    NuxtJS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    ReactJS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    NextJS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    TypeScript
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Tailwind CSS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Vuetify
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Bootstrap
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Ant Design
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    DaisyUI
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Pug
+                  </span>
+                </div>
+              </div>
+
+              <!-- Backend -->
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Backend</h3>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Laravel
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    NodeJS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    NestJS
+                  </span>
+                </div>
+              </div>
+
+              <!-- DevOps & Tools -->
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">DevOps & Tools</h3>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Docker
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    AWS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Cloudflare
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Heroku
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Git
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Google Analytics
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Pusher
+                  </span>
+                </div>
+              </div>
+
+              <!-- CMS & UI Design -->
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">
+                  CMS & UI Design
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Strapi CMS
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    Figma
+                  </span>
+                </div>
+              </div>
+
+              <!-- Databases -->
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-white">Databases</h3>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    MySQL
+                  </span>
+                  <span
+                    class="px-4 py-2 bg-slate-800 text-cyan-300 text-sm rounded-lg border border-slate-700 font-medium"
+                  >
+                    MSSQL
+                  </span>
+                </div>
+              </div>
+            </div>
           </section>
 
           <!-- Experience Section -->
