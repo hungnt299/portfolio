@@ -84,8 +84,9 @@ const experiences = [
 
 const projects = [
   {
-    title: "Multi-Platform Gaming Web Application (Frontend)",
+    title: "Multi-Platform Gaming Web Application",
     period: "March 2024 - Aug 2025",
+    role: "Frontend",
     description:
       "Multi-platform gaming web application targeting European markets with casino games, sports betting, and social gaming features. Built with Vue.js 3/Nuxt.js 3 supporting multiple domains and brands through unified architecture.",
     technologies: [
@@ -115,8 +116,9 @@ const projects = [
     url: "#",
   },
   {
-    title: "Misa (Full-Stack)",
+    title: "Misa",
     period: "Jun 2023 - Jan 2024",
+    role: "Full-Stack",
     description:
       "A comprehensive enterprise system for managing accounting, human resources, and business operations. The system includes multiple functional modules such as enterprise management covering accounting, HR, orders, and asset management, debt tracking, inventory, tools, reporting, and integration with tax systems. Features a real-time dashboard to track work progress and order status across departments.",
     technologies: [
@@ -137,8 +139,9 @@ const projects = [
     url: "#",
   },
   {
-    title: "Motion Care - AI Health Monitoring System (Frontend)",
+    title: "Motion Care - AI Health Monitoring System",
     period: "Jun 2023 - Aug 2023",
+    role: "Frontend",
     description:
       "An AI-based health monitoring system where users record posture videos guided by the app. Frontend captures body key points (joints, limbs) and draws visual markers (dots/lines) over the body. Coordinates are sent to the backend for analysis of health conditions and improvement suggestions. Used in physiotherapy, posture correction, and preventive care.",
     technologies: ["React.js", "Vue.js", "Nest.js", "Ant Design", "KonvaJS"],
@@ -151,8 +154,9 @@ const projects = [
     url: "#",
   },
   {
-    title: "Shiftgate - Luxury Car Marketplace (Frontend)",
+    title: "Shiftgate - Luxury Car Marketplace",
     period: "Dec 2021 - Mar 2022",
+    role: "Frontend",
     description:
       "Luxury imported car marketplace platform connecting buyers and sellers in Japan. Frontend provides advanced search filters by brand, price, year, and mileage with responsive design. Vehicle data and user interactions are processed through secure APIs for inventory management.",
     technologies: [
@@ -266,9 +270,9 @@ onUnmounted(() => {
 <template>
   <div class="min-h-screen bg-[#11141c] text-slate-300">
     <div class="max-w-7xl mx-auto px-8 lg:px-12 pt-24 pb-12">
-      <div class="flex flex-col md:flex-row gap-16 lg:gap-20">
+      <div class="flex flex-col lg:flex-row gap-16 lg:gap-20">
         <!-- Left Column - Navigation -->
-        <div class="w-full md:w-[48%]">
+        <div class="w-full lg:w-[48%]">
           <div class="sticky top-24">
             <!-- Bio -->
             <div class="mb-16">
@@ -346,7 +350,7 @@ onUnmounted(() => {
         </div>
 
         <!-- Right Column - Content -->
-        <div class="w-full md:w-[52%]">
+        <div class="w-full lg:w-[52%]">
           <!-- About Section -->
           <section id="about" class="space-y-8 mb-24">
             <h2 class="text-3xl font-bold text-white mb-8">About</h2>
@@ -637,9 +641,17 @@ onUnmounted(() => {
               :key="project.title"
               class="border border-slate-800 rounded-lg p-8 hover:border-slate-700 transition-colors duration-200"
             >
-              <h3 class="text-xl font-semibold text-white mb-4">
-                {{ project.title }}
-              </h3>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-xl font-semibold text-white">
+                  {{ project.title }}
+                </h3>
+                <span
+                  v-if="project.role"
+                  class="px-3 py-1 bg-cyan-900/30 text-cyan-300 text-xs font-semibold rounded-full border border-cyan-700/60"
+                >
+                  {{ project.role }}
+                </span>
+              </div>
               <p class="text-sm text-slate-300 mb-4">
                 {{ project.period }}
               </p>
