@@ -8,6 +8,7 @@ const sections = [
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "languages", label: "Languages" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -175,6 +176,17 @@ const projects = [
     ],
     url: "#",
   },
+];
+
+const languages = [
+  {
+    name: "English",
+    detail: "B2 (Upper-Intermediate) - CEFR Certified",
+    notes: [
+      "1.5 years working with US clients, participating in bi-weekly meetings with clients and international teams",
+    ],
+  },
+  { name: "Vietnamese", detail: "Native" },
 ];
 
 const contactInfo = {
@@ -691,6 +703,31 @@ onUnmounted(() => {
                 View Project →
               </a> -->
             </div>
+          </section>
+
+          <!-- Languages Section -->
+          <section id="languages" class="space-y-8 mb-24">
+            <h2 class="text-3xl font-bold text-white mb-8">Languages</h2>
+            <ul class="space-y-4">
+              <li
+                v-for="lang in languages"
+                :key="lang.name"
+                class="border border-slate-800 rounded-lg p-4 bg-slate-900/30"
+              >
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="text-lg font-semibold text-white"
+                    >{{ lang.name }}:</span
+                  >
+                  <span class="text-slate-300">{{ lang.detail }}</span>
+                </div>
+                <ul
+                  v-if="lang.notes && lang.notes.length"
+                  class="list-disc list-inside mt-3 space-y-1 text-slate-300"
+                >
+                  <li v-for="note in lang.notes" :key="note">{{ note }}</li>
+                </ul>
+              </li>
+            </ul>
           </section>
 
           <!-- Contact Section -->
