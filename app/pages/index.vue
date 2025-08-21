@@ -282,29 +282,13 @@ onUnmounted(() => {
 
 <template>
   <div class="min-h-screen bg-[#11141c] text-slate-300">
-    <div class="max-w-7xl mx-auto px-8 lg:px-12 pt-24 pb-12">
+    <div class="max-w-7xl mx-auto px-8 lg:px-12 pt-18 pb-12">
       <div class="flex flex-col lg:flex-row gap-16 lg:gap-20">
         <!-- Left Column - Navigation -->
         <div class="w-full lg:w-[48%]">
-          <div class="sticky top-24">
+          <div class="sticky top-18">
             <!-- Bio -->
-            <div class="mb-16">
-              <!-- Profile Image -->
-              <div class="mb-8 flex">
-                <div class="relative">
-                  <img
-                    src="/profile-image.jpg"
-                    alt="Ngo Thanh Hung - Software Engineer"
-                    class="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-slate-700 shadow-lg"
-                  />
-                  <div
-                    class="absolute bottom-[12px] lg:bottom-[20px] right-0 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 flex items-center justify-center"
-                  >
-                    <span class="text-white text-sm">✓</span>
-                  </div>
-                </div>
-              </div>
-
+            <div class="mb-10">
               <h2 class="text-4xl font-bold mb-4 text-white">Ngo Thanh Hung</h2>
               <p class="text-xl">Software Engineer</p>
               <p class="text-md leading-relaxed max-w-xs">
@@ -333,7 +317,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Navigation -->
-            <nav class="mb-16">
+            <nav class="mb-10">
               <ul class="space-y-3">
                 <li v-for="section in sections" :key="section.id">
                   <button
