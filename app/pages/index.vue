@@ -289,6 +289,22 @@ onUnmounted(() => {
           <div class="sticky top-24">
             <!-- Bio -->
             <div class="mb-16">
+              <!-- Profile Image -->
+              <div class="mb-8 flex">
+                <div class="relative">
+                  <img
+                    src="/profile-image.jpg"
+                    alt="Ngo Thanh Hung - Software Engineer"
+                    class="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-slate-700 shadow-lg"
+                  />
+                  <div
+                    class="absolute bottom-[12px] lg:bottom-[20px] right-0 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 flex items-center justify-center"
+                  >
+                    <span class="text-white text-sm">✓</span>
+                  </div>
+                </div>
+              </div>
+
               <h2 class="text-4xl font-bold mb-4 text-white">Ngo Thanh Hung</h2>
               <p class="text-xl">Software Engineer</p>
               <p class="text-md leading-relaxed max-w-xs">
