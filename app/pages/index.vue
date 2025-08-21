@@ -8,6 +8,7 @@ const sections = [
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "strengths-weaknesses", label: "Strengths & Weaknesses" },
   { id: "languages", label: "Languages" },
   { id: "contact", label: "Contact" },
 ];
@@ -702,6 +703,111 @@ onUnmounted(() => {
               >
                 View Project →
               </a> -->
+            </div>
+          </section>
+
+          <!-- Strengths & Weaknesses Section -->
+          <section id="strengths-weaknesses" class="space-y-8 mb-24">
+            <h2 class="text-3xl font-bold text-white mb-8">
+              Strengths & Weaknesses
+            </h2>
+            <div class="grid gap-8">
+              <!-- Strengths -->
+              <div class="space-y-4">
+                <h3
+                  class="text-xl font-semibold text-emerald-400 flex items-center gap-2"
+                >
+                  <span class="text-2xl">💪</span>
+                  Strengths
+                </h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                    <span class="text-emerald-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Strong technical leadership with proven ability to lead
+                      cross-functional teams and manage end-to-end project
+                      delivery</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-emerald-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Versatile full-stack expertise across multiple modern
+                      frameworks (Vue.js, React.js, Laravel, Node.js)</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-emerald-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Excellent problem-solving skills with experience in
+                      complex enterprise systems and scalable
+                      architectures</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-emerald-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Strong communication skills with international clients
+                      and teams, including 1.5 years working with US
+                      clients</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-emerald-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Proven track record of delivering high-quality software
+                      in fast-paced, agile environments</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Weaknesses -->
+              <div class="space-y-4">
+                <h3
+                  class="text-xl font-semibold text-amber-400 flex items-center gap-2"
+                >
+                  <span class="text-2xl">🎯</span>
+                  Areas for Growth
+                </h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                    <span class="text-amber-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Deepening expertise in advanced DevOps practices and
+                      cloud-native architectures</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-amber-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Expanding knowledge in emerging technologies like AI/ML
+                      integration and microservices</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-amber-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Further developing system design and architecture skills
+                      for enterprise-scale applications</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-amber-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Enhancing expertise in performance optimization and
+                      advanced testing strategies</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-amber-400 mt-1">•</span>
+                    <span class="text-slate-300"
+                      >Building deeper knowledge in data engineering and
+                      analytics platforms</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
